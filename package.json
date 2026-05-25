@@ -1,0 +1,14 @@
+{
+  "name": "mood-based-recipe",
+  "version": "1.0.0",
+  "description": "Recipe recommendations based on your mood",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init-db": "node database/init.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2"
+  }
+}

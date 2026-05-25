@@ -1,0 +1,44 @@
+.mood-btn {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.mood-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(45, 41, 38, 0.08);
+}
+
+.mood-btn:focus-visible {
+  outline: 2px solid #c45c3e;
+  outline-offset: 2px;
+}
+
+.mood-btn.selected {
+  border-color: #c45c3e;
+  background: linear-gradient(135deg, rgba(196, 92, 62, 0.08), rgba(107, 143, 113, 0.08));
+  box-shadow: 0 4px 12px rgba(196, 92, 62, 0.15);
+}
+
+.recipe-card {
+  animation: fadeUp 0.35s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.spinner {
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
